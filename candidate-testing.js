@@ -52,8 +52,8 @@ for (let i = 0; i < correctAnswers.length; i++) {
 
 console.log(`
   Question ${i + 1}: "${questions[i].slice(0, -1)}"
-  Your answer: ${candidateAnswer[i]}
-  Correct Answer: ${correctAnswer[i]}
+  Your answer: ${candidateAnswers[i]}
+  Correct Answer: ${correctAnswers[i]}
   Result: ${result}`)
 }
 
