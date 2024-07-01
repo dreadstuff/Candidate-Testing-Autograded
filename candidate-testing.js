@@ -58,8 +58,17 @@ console.log(`
 }
 
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
+//reference material: (Number of Correct Answers) / (Number of Quiz Questions) * 100
+grade = ((totalCorrect.length / correctAnswers.length) * 100);
 
-
+//grading console output - final grades pass or fail based on 80 
+let gradeTotals = `Final Score: ${grade}% correct.`
+console.log(`\nCalculating...\n${totalCorrect.length} correct answers out of ${correctAnswers.length}.`)
+  if (grade >= 80) {
+    console.log(`\n---------------\n${gradeTotals}\nYou passed ${candidateName}! Wowwwwwwwwwwwwww!`)
+  } else {
+    console.log(`\n---------------\n${gradeTotals}\nYou failed ${candidateName}! Oh no! Try again!`)
+  }
   return grade;
 }
 
